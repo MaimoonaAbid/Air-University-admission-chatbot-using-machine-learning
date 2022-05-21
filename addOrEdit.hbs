@@ -1,0 +1,17 @@
+<h3>{{viewTitle}}</h3>
+<form action="/" method="post" autocomplete="off">
+<input type="hidden" name="_id" value="{{task.id}}">
+<div class="form-group">
+    <label >Question</label>
+    <input type="text" class="form-control" name="Question" value="{{task.Question}}" placeholder="Question">
+
+</div>
+<div class="form-group">
+    <label >Answer</label>
+    <input type="text" class="form-control" name="Answer" value="{{task.Answer}}"placeholder="Answer">
+</div>
+<div class="form-group">
+    <button type="submit" class="btn btn-primary">submit</button>
+    <a href="/list" class="btn btn-success">View All</a>
+</div>
+</form>
